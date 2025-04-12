@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Falcon Cooling Pads | Falcon International Trading Co.</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo-text h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        .logo-text p {
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #3498db;
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s;
+        }
+
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+
+        /* Hero Banner */
+        .hero-banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(data:image/jpeg;base64,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);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-banner h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero-banner p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid #3498db;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: #3498db;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            margin-left: 15px;
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: #3498db;
+        }
+
+        /* Product Intro Section */
+        .product-intro {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 36px;
+            color: #2c3e50;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background: #3498db;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .intro-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .intro-text {
+            flex: 1;
+        }
+
+        .intro-text h3 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .intro-text p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .intro-image {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 50px;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .feature-card p {
+            color: #7f8c8d;
+        }
+
+        /* Product Specifications */
+        .specifications {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .spec-table th,
+        .spec-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .spec-table th {
+            background-color: #3498db;
+            color: white;
+            font-weight: 600;
+        }
+
+        .spec-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .spec-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Applications Section */
+        .applications {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .app-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .app-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .app-image {
+            height: 180px;
+            overflow: hidden;
+        }
+
+        .app-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .app-card:hover .app-image img {
+            transform: scale(1.1);
+        }
+
+        .app-info {
+            padding: 20px;
+        }
+
+        .app-info h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .contact-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .contact-icon {
+            font-size: 24px;
+            color: #3498db;
+            margin-top: 5px;
+        }
+
+        .contact-details h3 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        .contact-details p,
+        .contact-details a {
+            color: #7f8c8d;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-details a:hover {
+            color: #3498db;
+        }
+
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #3498db;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: #3498db;
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-column ul li a:hover {
+            color: #3498db;
+        }
+
+        .footer-column p {
+            color: #bdc3c7;
+            margin-bottom: 15px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #34495e;
+            color: white;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: #3498db;
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            font-size: 14px;
+            color: #bdc3c7;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                margin-top: 20px;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+            }
+
+            .hero-banner h1 {
+                font-size: 32px;
+            }
+
+            .hero-banner p {
+                font-size: 16px;
+            }
+
+            .btn {
+                display: block;
+                margin: 10px auto;
+                width: 80%;
+            }
+
+            .btn-outline {
+                margin-left: auto;
+            }
+
+            .intro-content {
+                flex-direction: column;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://ibb.co/ZpKD23Ks" alt="Falcon International Logo">
+                <div class="logo-text">
+                    <h1>Falcon International</h1>
+                    <p> Falcon Cooling Pads</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#specs">Specifications</a></li>
+                    <li><a href="#applications">Applications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner" id="home">
+        <div class="container">
+            <h1> Premium Evaporative Cooling Pads</h1>
+            <p>High-performance cellulose cooling pads designed for maximum efficiency and durability in all climate conditions.</p>
+            <a href="#contact" class="btn">Request a Quote</a>
+            <a href="#specs" class="btn btn-outline">View Specifications</a>
+        </div>
+    </section>
+
+    <!-- Product Intro Section -->
+    <section class="product-intro">
+        <div class="container">
+            <h2 class="section-title">About Falcon Cooling Pads</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h3>Superior Cooling Performance</h3>
+                    <p>Falcon International's evaporative cooling pads are engineered using premium quality cellulose material that provides exceptional cooling efficiency while maintaining optimal airflow.</p>
+                    <p>Our pads feature a specially designed cross-fluted configuration that maximizes the surface area for evaporation, resulting in cooler air output and lower energy consumption compared to conventional cooling pads.</p>
+                    <p>The advanced manufacturing process ensures uniform water distribution across the entire pad surface, preventing dry spots and maintaining consistent cooling performance throughout the system's operation.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/297880358/TC/ZH/MT/8868952/whatsapp-image-2022-07-18-at-11-50-21-am-1000x1000.jpeg" alt< "Falcon Cooling Pads">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Excellent Water Absorption</h3>
+                    <p>Specially treated cellulose fibers provide superior water retention and distribution across the entire pad surface.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Optimal Airflow</h3>
+                    <p>Precision-engineered flute design ensures maximum air contact while minimizing pressure drop.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Durable Construction</h3>
+                    <p>Rigid frame support and anti-rot additives extend pad life even in harsh operating conditions.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Made from recyclable materials and helps reduce energy consumption compared to conventional AC systems.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bacteria"></i>
+                    </div>
+                    <h3>Anti-Microbial</h3>
+                    <p>Special treatment inhibits algae and bacterial growth, maintaining hygienic air output.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Easy Maintenance</h3>
+                    <p>Simple to clean and replace, minimizing downtime and maintenance costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="specifications" id="specs">
+        <div class="container">
+            <h2 class="section-title">Technical Specifications</h2>
+            <table class="spec-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Specification</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Material</td>
+                        <td>Premium Corrugated Cellulose</td>
+                    </tr>
+                    <tr>
+                        <td>Standard Thickness</td>
+                        <td>300mm,200mm,150mm, (Custom sizes available)</td>
+                    </tr>
+                    <tr>
+                        <td>Water Absorption</td>
+                        <td>90-95% of pad weight</td>
+                    </tr>
+                    <tr>
+                        <td>Cooling Efficiency</td>
+                        <td>80-85% (depending on climate conditions)</td>
+                    </tr>
+                    <tr>
+                        <td>Air Flow Rate</td>
+                        <td>1.8-2.2 m/s recommended</td>
+                    </tr>
+                    <tr>
+                        <td>Pressure Drop</td>
+                        <td>10-15 Pa at 2 m/s face velocity</td>
+                    </tr>
+                    <tr>
+                        <td>Operating pH Range</td>
+                        <td>6.5-8.5</td>
+                    </tr>
+                    <tr>
+                        <td>Expected Lifespan</td>
+                        <td>2-4 years (depending on water quality and maintenance)</td>
+                    </tr>
+                    <tr>
+                        <td>Standard Sizes</td>
+                        <td>Custom sizes available to fit all evaporative cooler models</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="applications" id="applications">
+        <div class="container">
+            <h2 class="section-title">Applications</h2>
+            <div class="app-grid">
+                <div class="app-card">
+                    <div class="app-image">
+                        <img src="data:image/jpeg;base64,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" alt="Greenhouse Cooling">
+                    </div>
+                    <div class="app-info">
+                        <h3>Greenhouses</h3>
+                        <p>Maintain optimal growing conditions with precise temperature and humidity control.</p>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Poultry_Farm_in_Namakkal%2C_Tamil_Nadu.jpg/250px-Poultry_Farm_in_Namakkal%2C_Tamil_Nadu.jpg" alt="Poultry Farms">
+                    </div>
+                    <div class="app-info">
+                        <h3>Poultry Farms</h3>
+                        <p>Create comfortable environments for livestock health and productivity.</p>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-image">
+                        <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Industrial Cooling">
+                    </div>
+                    <div class="app-info">
+                        <h3>Industrial Facilities</h3>
+                        <p>Cost-effective cooling solution for factories and warehouses.</p>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-image">
+                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Commercial Spaces">
+                    </div>
+                    <div class="app-info">
+                        <h3>Commercial Spaces</h3>
+                        <p>Energy-efficient cooling for offices, restaurants, and retail spaces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+919910112299">+91 9910112299</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:falconintl.in@gmail.com">falconintl.in@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Delhi, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="quote">Request a Quote</option>
+                                <option value="product">Product Inquiry</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Falcon International</h3>
+                    <p>Manufacturers of high-quality evaporative cooling pads for industrial, agricultural, and commercial applications.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Product Features</a></li>
+                        <li><a href="#specs">Specifications</a></li>
+                        <li><a href="#applications">Applications</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">Standard Cooling Pads</a></li>
+                        <li><a href="#">Heavy-Duty Pads</a></li>
+                        <li><a href="#">Custom Sizes</a></li>
+                        <li><a href="#">Replacement Pads</a></li>
+                        <li><a href="#">Cooling System Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> +91 9910112299</li>
+                        <li><i class="fas fa-envelope"></i> falconintl.in@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Delhi, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Falcon International Trading Co. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
